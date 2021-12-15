@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+
+		.wrapper{
+			    display: flex;
+			    flex-direction: column;
+			    min-height: 100vh;
+		}
+
+		.wrapper > * {
+			padding: 20px;
+		}
+		.page-header{
+			background-color: gray;
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: space-between;
+		    align-items: center;
+		    flex-wrap: wrap;
+		}
+		.page-main{
+			background-color: palevioletred;
+			flex-grow: 1;	
+		}
+		.page-footer{
+			background-color: aqua;
+		}
+		
+		.nav-list{
+			list-style-type: none;
+		    margin: 0;
+		    padding: 0;
+		    display: flex;
+		    flex-direction: row;
+		    order: 1;
+		    width: 100%;
+		}
+		.nav-list li{
+			margin-left: 10px;
+		}
+		.ul-img{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+		.page-footer{
+		    display: flex;
+    		flex-direction: row;
+			justify-content: space-between;
+		}
+
+		/*@media only screen and  (max-width : 500px){
+			.page-header ul {
+				width: auto;
+				margin-top: 0;
+			}
+
+			.page-header .btn-cta {
+				order: 1;
+			}
+			/*footer.page-footer{
+    			flex-direction: column-reverse;
+    			
+			}
+			}*/
+
+			@media screen and (min-width: 700px) {
+		  .page-footer {
+		    flex-direction: column-reverse;
+		    justify-content: space-between;
+		  }
+		 
+		  .page-footer ul {
+		    margin-bottom: 0;
+		  }
+		}
+		
+
+		
+}
+	</style>
+</head>
+<script src="./index.js"></script>
+<body>
+	<div class="wrapper">
+	  <header class="page-header">
+	    <!-- content here -->
+
+	    
+	    <h2 class="logo">LOGO</h2>
+	    <ul class="nav-list">
+	    	<li>Option 1</li>
+	    	<li>Option 2</li>
+	    	<li>Option 3</li>
+	    	<li>Option 4</li>
+	    </ul>
+	    <button class="btn-cta">CTA Button</button>	
+	   
+	    
+	  </header>
+	  <main class="page-main">
+	    <!-- content here -->
+	    Main
+	  </main>
+	  <footer class="page-footer">
+		  <small class="footer-text">
+		    @Copyright 2018. All rights reserved
+		  </small>
+		  <ul class="ul-img">
+		    <li><img alt="Img1"/></li>
+		    <li><img alt="Img2"/></li>
+		    <li><img alt="Img3"/></li>
+		    <li><img alt="Img4"/></li>
+		  </ul>
+</footer>
+	</div>
+
+</body>
+</html>
