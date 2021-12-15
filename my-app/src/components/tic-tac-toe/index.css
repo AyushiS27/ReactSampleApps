@@ -1,0 +1,30 @@
+.Board{
+    display: flex;
+    background-color: antiquewhite;
+    flex-direction: column;
+}
+
+.Board .column{
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+}
+
+.Board .cell_player{
+    height: 50px;
+    width: 50px;
+    background: aqua;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0 0 10px 2px cyan;
+}
+
+.Board .cell_player.cell_player_0{
+    background-color: burlywood;
+    box-shadow: 0 0 10px 2px burlywood ;
+}
+
+.Board .cell_player.cell_player_1{
+    background-color:coral;
+    box-shadow: 0 0 10px 2px coral ;
+}

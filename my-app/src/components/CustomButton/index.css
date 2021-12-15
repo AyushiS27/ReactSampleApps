@@ -1,0 +1,59 @@
+.btn-custom{
+    margin: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background 0.2s ease;
+    user-select: none;
+}
+
+.btn-custom.basic{
+    color: #fff;
+    background-color: #3777d1;
+    border: 1px solid #3777d1;
+    border-radius: 5px;
+}
+
+.btn-custom.link{
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.btn-custom.secondary{
+    color: #868383;
+    background-color: transparent;
+    border: 1px solid #868383;
+    border-radius: 5px;
+}
+
+.btn-custom.danger{
+    color: #fff;
+    background-color: rgb(207, 23, 23);
+    border: 1px solid rgb(207, 23, 23);
+    border-radius: 5px;
+}
+
+.btn-custom:disabled{
+    background-color: transparent;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    cursor: none;
+
+}
+
+.btn-custom.primary{
+    background-color: rgb(9, 223, 9);
+    border: 1px solid rgb(9, 223, 9);
+    border-radius: 5px;
+    cursor: none;
+    color: #fff;
+    
+}
+
+.btn-custom.outline{
+    color: #868383;
+    background-color: transparent;
+    border: none;
+    outline: 1px solid #868383;
+    border-radius: 5px;
+}

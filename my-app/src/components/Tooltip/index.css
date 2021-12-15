@@ -1,0 +1,52 @@
+:root {
+    --tooltip-text-color: white;
+    --tooltip-background-color: black;
+    --tooltip-margin: 30px;
+    --tooltip-arrow-size: 6px;
+  }
+
+.tooltip-container{
+    /* display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; */
+}
+
+.tooltip{
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+    background: rgba(51, 170, 51, .1);
+}
+
+.tooltip-content{
+    position: relative;
+    display: inline-block;
+}
+
+
+/*Revise how tooltip is being positioned using transform and left top*/
+.LEFT{
+    left: calc(var(--tooltip-margin) * -1);
+    transform: translateX(-100%);
+}
+
+.TOP{
+    top: calc(var(--tooltip-margin) * -1);
+}
+
+.BOTTOM{
+    bottom: calc(var(--tooltip-margin) * -1 );
+}
+
+.RIGHT{
+    left: 100%;
+    transform: translateX(0) translateY(-50%);
+    top: 50%;
+}

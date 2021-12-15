@@ -1,0 +1,38 @@
+.snake-ladder-comp{
+    display: inline-flex;
+    
+    border: 1px solid #dede;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.snake-ladder-comp .row-box:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+.row-box{
+    display: flex;
+}
+
+.dice{
+    background-color: brown;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    /* position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: left 2s, bottom 2s; */
+}
+
+.P1{
+    border-radius: 50%;
+    background-color: goldenrod;
+}
+.comp-item{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 1px solid greenyellow;
+}
